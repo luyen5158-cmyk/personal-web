@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- 1. 文件類型宣告：告訴瀏覽器這是 HTML5 -->
+<html lang="zh-Hant">
+<head>
+  <!-- 2. head：放網頁的設定資訊，不會直接顯示在畫面上 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="黃芳戀的個人網頁 — 開南大學資訊管理系">
+  <title>黃芳戀｜個人網頁</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 3. body：放所有看得見的內容 -->
+
+  <!-- 導覽列 -->
+  <header class="nav">
+    <a class="logo" href="#top">黃芳戀</a>
+    <nav>
+      <a href="#about">關於我</a>
+      <a href="#skills">技能</a>
+      <a href="#works">作品</a>
+      <a href="#hobby">興趣</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+    <button id="theme" class="theme" aria-label="切換深色／淺色模式">◐</button>
+  </header>
+
+  <main id="top">
+    <!-- 首頁區塊 -->
+    <section class="hero">
+      <p class="eyebrow">開南大學 · 資訊管理系</p>
+      <h1>你好，我是 <span id="typed" data-words="黃芳戀|資管系學生|網頁初學者"></span></h1>
+      <p class="lead">用簡單的程式，把想法變成看得見的網頁。這是我的第一個個人網頁。</p>
+      <div class="actions">
+        <a class="btn primary" href="#works">看我的作品</a>
+        <a class="btn" href="#contact">聯絡我</a>
+      </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="reveal">
+      <h2>關於我</h2>
+      <div class="about">
+        <div class="photo">
+          <!-- 把你的照片命名為 photo.jpg，放在同一個資料夾即可 -->
+          <img src="photo.jpg" alt="我的照片" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'放上你的照片'}))">
+        </div>
+        <div>
+          <p>我是黃芳戀，目前就讀開南大學資訊管理系三年級，學號 B11207072。這學期修習「雲端服務」課程，指導老師是黃信育老師。</p>
+          <p>我來自越南，喜歡看電影、去旅遊和吃好吃的東西。在這門課中，我學會了 HTML、CSS，並用 GitHub 與 Vercel 把網頁發布到網路上。</p>
+          <ul class="facts">
+            <li><b>學校</b>開南大學</li>
+            <li><b>科系</b>資訊管理系</li>
+            <li><b>語言</b>越南語、中文</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="reveal">
+      <h2>技能</h2>
+      <div class="grid">
+        <div class="card"><h3>HTML</h3><p>建立網頁結構</p><i class="bar" style="--w:70%"></i></div>
+        <div class="card"><h3>CSS</h3><p>設計版面與色彩</p><i class="bar" style="--w:60%"></i></div>
+        <div class="card"><h3>JavaScript</h3><p>讓網頁有互動</p><i class="bar" style="--w:35%"></i></div>
+        <div class="card"><h3>GitHub</h3><p>版本控制與備份</p><i class="bar" style="--w:55%"></i></div>
+        <div class="card"><h3>Vercel</h3><p>一鍵部署上線</p><i class="bar" style="--w:55%"></i></div>
+        <div class="card"><h3>Office</h3><p>Word / Excel / PowerPoint</p><i class="bar" style="--w:75%"></i></div>
+      </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="works" class="reveal">
+      <h2>作品</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>個人網頁</h3>
+          <p>即現在這個網頁。使用 HTML、CSS、JavaScript 製作，並部署在 Vercel。</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </article>
+        <article class="card">
+          <h3>分組專題（暫定）</h3>
+          <p>【專題名稱】— 與【組員】合作，我負責【分工內容】。</p>
+          <span class="tag">團隊合作</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 興趣 -->
+    <section id="hobby" class="reveal">
+      <h2>興趣</h2>
+      <ul class="chips">
+        <li>看電影</li><li>去旅遊</li><li>吃美食</li>
+      </ul>
+    </section>
+
+    <!-- 聯絡 -->
+    <section id="contact" class="reveal">
+      <h2>聯絡我</h2>
+      <p>Email：<a href="mailto:b11207072@gapps.knu.edu.tw">b11207072@gapps.knu.edu.tw</a></p>
+      <p>電話：<a href="tel:+886981036698">0981-036-698</a></p>
+      <p>GitHub：<a href="https://github.com/luyen5158-cmyk" target="_blank" rel="noopener">github.com/luyen5158-cmyk</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 黃芳戀 · 開南大學資訊管理系 · 雲端服務期中報告 · 指導老師：黃信育</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
